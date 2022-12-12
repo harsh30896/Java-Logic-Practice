@@ -14,7 +14,7 @@ public class SpecialPythagorasTriplet
 
                             +c);
                     System.out.println(a*b*c);
-                    System.out.println("hello world");
+
                 }
             }
         }
