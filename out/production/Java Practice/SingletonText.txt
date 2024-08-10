@@ -1,0 +1,7 @@
+We can break singleton class by the following.
+1. Reflection Api :- That change the property of the objects at runtime
+2. Serialization Api :- Concept of send objects into the byte stream:- OverRide the Read Resolve issue to ensure
+return's singleton instance.
+3. Cloning :- It can throw Clone Not supported a cloneNotSupportedException, preventing the creation of a new instance through
+cloning.
+

@@ -7,12 +7,10 @@ public class Factorial {
 		int val  = fun(5);
 		System.out.println(val);
 	}
-	public static int fun(int n)
-	{
-		if(n == 1) {
+	public static int fun(int n) {
+		if(n ==1){
 			return 1;
 		}
 		return n*fun(n-1);
 	}
-	
 }
