@@ -3,19 +3,19 @@ package MultiThreadingQuestion;
 public class ProducerConsumerThreading {
     public static void main(String[] args) {
         SharedResource sharedBuffer =
-                new SharedResource(3);
-
-        Thread produceThread = new Thread(()->{
-            try{
-                for(int i = 0; i<=6; i++){
-                    sharedBuffer.produce(i);
-                }
-            }
-            catch (Exception e)
-            {
-                e.printStackTrace();
-            }
-        });
+                new SharedResource(4);
+//
+//        Thread produceThread = new Thread(()->{
+//            try{
+//                for(int i = 0; i<=6; i++){
+//                    sharedBuffer.produce(i);
+//                }
+//            }
+//            catch (Exception e)
+//            {
+//                e.printStackTrace();
+//            }
+//        });
 
         Thread consumerThread = new Thread(()->{
            try{
@@ -28,7 +28,7 @@ public class ProducerConsumerThreading {
            }
         });
 
-        produceThread.start();
+       // produceThread.start();
         consumerThread.start();
 
     }
